@@ -1,0 +1,74 @@
+.calendar {
+    width: 350px;
+    height: 240px;
+    font-size: 16px
+}
+
+.calendar .header {
+    width: 350px;
+    height: 44px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.monthPicker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: white
+}
+
+.monthPicker:hover {
+    background-color: #e6e6e6
+}
+
+.calendar .header span {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.timeTable {
+    width: 350px;
+}
+
+.timeTable td {
+    width: 50px;
+    height: 36px;
+    background-color: white;
+}
+
+td:hover {
+    background-color: #e6e6e6
+}
+
+.timeTable .today {
+    background-color: #ffff76
+}
+
+.timeTable .active {
+    background-color: #006edc
+}
+
+.timeTable .lastMonth {
+    background-color: #757575;
+    position: relative;
+}
+.timeTable .lastMonth:hover ::after{
+    content: '\f05e';
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    font-size: 20px;
+    color: #e70b0b;
+}
+
+.timeTable span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
